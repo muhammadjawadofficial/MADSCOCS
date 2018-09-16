@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Mobile Application Development</string>
+    <string name="heading1">a</string>
+    <string name="value1">1</string>
+    <string name="heading2">b</string>
+    <string name="value2">7</string>
+    <string name="heading3">c</string>
+    <string name="value3">12</string>
+    <string name="calBtn">Calculate</string>
+    <string name="headingResultActivity">Quadratic Equation</string>
+    <string name="equation">no equation</string>
+    <string name="roots">Roots:</string>
+    <string name="resultHeading1">X1</string>
+    <string name="resultHeading2">X2</string>
+    <string name="resultValue1">NULL</string>
+    <string name="resultValue2">NULL</string>
+</resources>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- Num 1 -->
+    <TextView
+        android:id="@+id/num1heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/heading1"
+        android:textSize="50sp"
+        app:layout_constraintBottom_toTopOf="@+id/num2heading"
+        app:layout_constraintEnd_toStartOf="@id/num1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/num1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/value1"
+        android:textSize="50sp"
+        app:layout_constraintBottom_toTopOf="@+id/num2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/num1heading"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Num 2 -->
+    <TextView
+        android:id="@+id/num2heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="@string/heading2"
+        android:textSize="50sp"
+        app:layout_constraintBottom_toTopOf="@id/num3heading"
+        app:layout_constraintEnd_toStartOf="@id/num2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/num1heading" />
+    <TextView
+        android:id="@+id/num2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/value2"
+        android:textSize="50sp"
+        app:layout_constraintBottom_toTopOf="@id/num3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/num2heading"
+        app:layout_constraintTop_toBottomOf="@id/num1"/>
+
+    <!-- Num 3 -->
+    <TextView
+        android:id="@+id/num3heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/heading3"
+        android:textSize="50sp"
+        app:layout_constraintTop_toBottomOf="@id/num2heading"
+        app:layout_constraintEnd_toStartOf="@id/num3"
+        app:layout_constraintBottom_toTopOf="@id/calculateButton"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/num3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/value3"
+        android:textSize="50sp"
+        app:layout_constraintBottom_toTopOf="@id/calculateButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/num3heading"
+        app:layout_constraintTop_toBottomOf="@+id/num2" />
+
+    <Button
+        android:id="@+id/calculateButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="@string/calBtn"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/num3heading" />
+
+</android.support.constraint.ConstraintLayout>
