@@ -40,9 +40,9 @@ public class ResultActivity extends AppCompatActivity {
             x1 = ((-b) + Math.sqrt(disc))/(2*a);
             x2 = ((-b) - Math.sqrt(disc))/(2*a);
             v = findViewById(R.id.x1);
-            v.setText(x1+"");
+            v.setText(String.format("%.2f",x1));
             v = findViewById(R.id.x2);
-            v.setText(x2+"");
+            v.setText(String.format("%.2f",x2));
         }
         else
         {

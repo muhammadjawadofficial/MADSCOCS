@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.content.Intent;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -25,24 +26,24 @@ public class MainActivity extends AppCompatActivity {
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                TextView tv;
+                EditText et;
                 String data;
                 int num;
 
                 Intent intent = new Intent(MainActivity.this, ResultActivity.class);
 
-                tv = findViewById(R.id.num1);
-                data = tv.getText().toString();
+                et = findViewById(R.id.num1);
+                data = et.getText().toString();
                 num = Integer.parseInt(data);
                 intent.putExtra("parameter1",num);
 
-                tv = findViewById(R.id.num2);
-                data = tv.getText().toString();
+                et = findViewById(R.id.num2);
+                data = et.getText().toString();
                 num = Integer.parseInt(data);
                 intent.putExtra("parameter2",num);
 
-                tv = findViewById(R.id.num3);
-                data = tv.getText().toString();
+                et = findViewById(R.id.num3);
+                data = et.getText().toString();
                 num = Integer.parseInt(data);
                 intent.putExtra("parameter3",num);
 

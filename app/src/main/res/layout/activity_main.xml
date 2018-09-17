@@ -17,11 +17,12 @@
         app:layout_constraintEnd_toStartOf="@id/num1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-    <TextView
+    <EditText
         android:id="@+id/num1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/value1"
+        android:inputType="numberSigned"
+        android:text="@string/enterTxt"
         android:textSize="50sp"
         app:layout_constraintBottom_toTopOf="@+id/num2"
         app:layout_constraintEnd_toEndOf="parent"
@@ -40,11 +41,12 @@
         app:layout_constraintEnd_toStartOf="@id/num2"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/num1heading" />
-    <TextView
+    <EditText
         android:id="@+id/num2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/value2"
+        android:inputType="numberSigned"
+        android:text="@string/enterTxt"
         android:textSize="50sp"
         app:layout_constraintBottom_toTopOf="@id/num3"
         app:layout_constraintEnd_toEndOf="parent"
@@ -63,11 +65,12 @@
         app:layout_constraintBottom_toTopOf="@id/calculateButton"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <TextView
+    <EditText
         android:id="@+id/num3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/value3"
+        android:inputType="numberSigned"
+        android:text="@string/enterTxt"
         android:textSize="50sp"
         app:layout_constraintBottom_toTopOf="@id/calculateButton"
         app:layout_constraintEnd_toEndOf="parent"
