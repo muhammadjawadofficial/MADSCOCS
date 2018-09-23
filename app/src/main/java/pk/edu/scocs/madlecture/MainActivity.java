@@ -33,21 +33,30 @@ public class MainActivity extends AppCompatActivity {
                 Intent intent = new Intent(MainActivity.this, ResultActivity.class);
 
                 et = findViewById(R.id.num1);
-                data = et.getText().toString();
-                num = Integer.parseInt(data);
-                intent.putExtra("parameter1",num);
-
-                et = findViewById(R.id.num2);
-                data = et.getText().toString();
-                num = Integer.parseInt(data);
-                intent.putExtra("parameter2",num);
-
-                et = findViewById(R.id.num3);
-                data = et.getText().toString();
-                num = Integer.parseInt(data);
-                intent.putExtra("parameter3",num);
-
-                startActivity(intent);
+                if(!(et.getText().toString().equals(""))) {
+                    data = et.getText().toString();
+                    num = Integer.parseInt(data);
+                    intent.putExtra("parameter1", num);
+                    et = findViewById(R.id.num2);
+                    if(!(et.getText().toString().equals(""))) {
+                        data = et.getText().toString();
+                        num = Integer.parseInt(data);
+                        intent.putExtra("parameter2", num);
+                        et = findViewById(R.id.num3);
+                        if(!(et.getText().toString().equals(""))) {
+                            data = et.getText().toString();
+                            num = Integer.parseInt(data);
+                            intent.putExtra("parameter3", num);
+                            startActivity(intent);
+                        }
+                        else
+                            Toast.makeText(MainActivity.this, "Enter Value of c", Toast.LENGTH_SHORT).show();
+                    }
+                    else
+                        Toast.makeText(MainActivity.this, "Enter Value of b", Toast.LENGTH_SHORT).show();
+                }
+                else
+                    Toast.makeText(MainActivity.this, "Enter Value of a", Toast.LENGTH_SHORT).show();
             }
         });
     }
